@@ -3,7 +3,8 @@
   :url "https://github.com/timofreiberg/bultitude"
   :license {:name "Eclipse Public License 1.0"}
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.tcrawley/dynapath "1.0.0"]]
+                 [org.tcrawley/dynapath "1.0.0"]
+                 [total-reader "1.0.1"]]
   :aliases {"test-all" ["with-profile" "dev,default:dev,1.8:dev,1.7:dev,1.6:dev,1.5:dev,1.4:dev,1.3,dev" "test"]}
   :profiles {:test {:resources ["test-resources"]}
              :1.8 {:dependencies [[org.clojure/clojure "1.8.0"]]}

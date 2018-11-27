@@ -99,3 +99,9 @@
   (is (= nil (ns-form-for-file (io/file "test-resources/bultitude/invalid.clj") true)))
   (is (thrown-with-msg? RuntimeException #"Map literal must contain an even number of forms"
                         (ns-form-for-file (io/file "test-resources/bultitude/invalid.clj") false))))
+
+(deftest test-multiple-namespaces
+  (is (= #{'first-ns 'second-ns 'third-ns}
+         (set
+          (second
+           (ns-forms-for-file (io/file "test-resources/bultitude/multiple-namespaces.clj")))))))
