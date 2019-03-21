@@ -1,4 +1,4 @@
-(defproject razum2um/bultitude "0.3.0"
+(defproject razum2um/bultitude "0.3.1"
   :description "A library for finding Clojure namespaces on the classpath."
   :url "https://github.com/timofreiberg/bultitude"
   :license {:name "Eclipse Public License 1.0"}
