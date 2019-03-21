@@ -1,9 +1,9 @@
-(defproject timofreiberg/bultitude "0.3.0"
+(defproject razum2um/bultitude "0.3.0"
   :description "A library for finding Clojure namespaces on the classpath."
   :url "https://github.com/timofreiberg/bultitude"
   :license {:name "Eclipse Public License 1.0"}
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.tcrawley/dynapath "1.0.0"]]
+                 [razum2um/dynapath "1.0.1"]]
   :aliases {"test-all" ["with-profile" "dev,default:dev,1.8:dev,1.7:dev,1.6:dev,1.5:dev,1.4:dev,1.3,dev" "test"]}
   :profiles {:test {:resources ["test-resources"]}
              :1.8 {:dependencies [[org.clojure/clojure "1.8.0"]]}
