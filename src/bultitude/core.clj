@@ -121,8 +121,9 @@
 (defn classpath-files
   "Returns a sequence of File objects of the elements on the classpath."
   ([classloader]
-     (map io/as-file (dp/all-classpath-urls classloader)))
-  ([] (dp/all-classpath-urls)))
+   (map io/as-file (dp/all-classpath-urls classloader)))
+  ([]
+   (map io/as-file (dp/all-classpath-urls))))
 
 (defn- classpath->collection [classpath]
   (if (coll? classpath)
